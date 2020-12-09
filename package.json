@@ -1,0 +1,25 @@
+{
+	"name": "giourmetakis.gr-with-node",
+	"version": "1.0.0",
+	"description": "personal-portfolio-site",
+	"main": "app.js",
+	"scripts": {
+		"start": "nodemon app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/giou55/nodeJS-personal-site.git"
+	},
+	"author": "Giorgos Giourmetakis",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/giou55/nodeJS-personal-site/issues"
+	},
+	"homepage": "https://github.com/giou55/nodeJS-personal-site#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.6"
+	}
+}
