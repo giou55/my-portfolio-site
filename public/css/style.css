@@ -392,7 +392,7 @@ input[type="submit"] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-	border-color: #fe5e55;
+	box-shadow: 0 0 5px 1px #fe5e55;
 }
 
 input[type="submit"]:hover {

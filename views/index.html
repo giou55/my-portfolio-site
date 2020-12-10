@@ -397,19 +397,15 @@
 				reach out to me by using the form below.
 			</p>
 			<div class="form-container">
-				<form action="/action_page.php">
-					<label for="fname">Name</label>
-					<input type="text" id="name" name="name" />
+				<form method="POST" action="send">
+					<label for="name">Name</label>
+					<input type="text" name="name" />
 
-					<label for="lname">Email</label>
-					<input type="email" id="email" name="email" />
+					<label for="email">Email</label>
+					<input type="email" name="email" />
 
-					<label for="subject">Message</label>
-					<textarea
-						id="subject"
-						name="subject"
-						style="height: 200px"
-					></textarea>
+					<label for="message">Message</label>
+					<textarea name="message" style="height: 200px"></textarea>
 
 					<input type="submit" value="Send Message" />
 				</form>
