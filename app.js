@@ -4,19 +4,20 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const sendgridTransport = require("nodemailer-sendgrid-transport");
 
+const log = console.log;
+
 const transporter = nodemailer.createTransport(
 	sendgridTransport({
 		auth: {
-			api_key:
-				"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",
+			api_key: process.env.SENDGRID_KEY,
 		},
 	})
 );
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
-
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.post("/send", (req, res) => {
@@ -47,4 +48,4 @@ app.use((req, res, next) => {
 	res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
 });
 
-app.listen(3000);
+app.listen(process.env.PORT | 3000);
