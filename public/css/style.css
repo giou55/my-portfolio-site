@@ -3,6 +3,7 @@
 /* General styles */
 
 html {
+	font-size: 14px;
 	scroll-behavior: smooth;
 }
 
@@ -42,16 +43,16 @@ img {
 
 .title {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.6rem;
 	margin-top: -0.4em;
 	display: inline-block;
-	padding: 0 22px 0 6px;
-	border-bottom-width: 8px;
+	padding: 0 1.6rem 0 0.4rem;
+	border-bottom-width: 9px;
 	border-bottom-style: solid;
 }
 
 .description {
-	font-size: 1em;
+	font-size: 1rem;
 	line-height: 1.8em;
 	font-weight: 500;
 	margin-bottom: 2em;
@@ -62,8 +63,8 @@ img {
 	font-weight: bold;
 	color: #666;
 	letter-spacing: 0.2em;
-	padding-left: 6px;
-	font-size: 0.85em;
+	padding-left: 0.4rem;
+	font-size: 0.85rem;
 }
 
 /* header */
@@ -101,13 +102,15 @@ header ul a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 3px solid #a72145;
 }
 
 .header-mobile .logo {
 	color: #fff;
+	font-size: 1.1rem;
 	font-weight: bold;
-	padding: 0 22px 0 6px;
-	border-bottom: 5px solid #a72145;
+	padding: 0 1.4em 0 0.4em;
+	border-bottom: none;
 }
 
 .header-desktop {
@@ -117,8 +120,9 @@ header ul a {
 
 .header-desktop .logo {
 	color: #fff;
+	font-size: 1.1rem;
 	font-weight: bold;
-	padding: 0 22px 0 6px;
+	padding: 0 1.4em 0 0.4em;
 	border-bottom: 5px solid #a72145;
 }
 
@@ -233,9 +237,10 @@ header ul a {
 	padding-top: calc(4em + 80px);
 }
 
-.content {
+.hero-content {
 	background: #2e2459;
 	color: white;
+	text-align: center;
 }
 
 .meet {
@@ -257,10 +262,6 @@ header ul a {
 .scroll {
 	width: 30px;
 	margin-top: 2em;
-}
-
-.content {
-	text-align: left;
 }
 
 .content-desktop {
@@ -289,7 +290,11 @@ header ul a {
 	width: 25px;
 }
 
-section {
+.skills,
+.portfolio,
+.about,
+.contact,
+.footer {
 	padding: 4em 2em;
 	text-align: center;
 }
@@ -299,8 +304,7 @@ section {
 }
 
 .skills-container ul li {
-	padding: 2em;
-	border-radius: 1em;
+	padding: 1em;
 	margin-bottom: 1em;
 }
 
@@ -374,8 +378,13 @@ section {
 	color: #fff;
 }
 
+.about-container a {
+	cursor: default;
+}
+
 .about-container a img {
 	margin-bottom: 2em;
+	max-width: 250px;
 }
 
 .contact {
@@ -469,6 +478,9 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 700px) {
+	html {
+		font-size: 15px;
+	}
 	.nav-container {
 		position: relative;
 	}
@@ -479,15 +491,10 @@ input[type="submit"]:hover {
 		display: none;
 	}
 	.header-desktop {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 	}
 	.hero {
 		padding-top: 4em;
-	}
-	.content {
-		text-align: center;
 	}
 	.content-desktop {
 		display: block;
@@ -495,12 +502,6 @@ input[type="submit"]:hover {
 	.content-mobile {
 		display: none;
 	}
-	.featured,
-	.portfolio,
-	.about {
-		text-align: left;
-	}
-	.featured,
 	.portfolio-container,
 	.about-container {
 		display: -ms-grid;
@@ -511,7 +512,6 @@ input[type="submit"]:hover {
 	.left,
 	.portfolio-left,
 	.about-left {
-		display: -ms-grid;
 		display: grid;
 		place-content: center;
 	}
@@ -538,16 +538,12 @@ input[type="submit"]:hover {
 	.about {
 		padding-top: 7em;
 	}
-	.about-container img {
-		margin-left: 2em;
+	.about-container a img {
+		float: right;
 	}
 }
 
 @media only screen and (min-width: 1050px) {
-	.hero {
-		height: 90vh;
-		background-color: #fff;
-	}
 	.nav-container {
 		display: -ms-grid;
 		display: grid;
@@ -560,9 +556,6 @@ input[type="submit"]:hover {
 	}
 	.social-header {
 		padding: 2em 4em 2em 0;
-	}
-	section {
-		padding: 4em;
 	}
 	.social-header {
 		display: block;
@@ -581,6 +574,8 @@ input[type="submit"]:hover {
 		width: 26px;
 	}
 	.hero {
+		height: 90vh;
+		background-color: #fff;
 		display: -ms-grid;
 		display: grid;
 		-ms-grid-columns: 66% auto;
@@ -588,11 +583,11 @@ input[type="submit"]:hover {
 		background: unset;
 		padding: 0;
 	}
-	.hero .content {
+	.hero .hero-content {
 		padding: 6em 8em 6em 4em;
 		text-align: left;
 	}
-	.hero .content h1 {
+	.hero .hero-content h1 {
 		font-size: 3em;
 		line-height: 1.2em;
 	}
@@ -605,13 +600,15 @@ input[type="submit"]:hover {
 		margin-top: 15%;
 		width: 100%;
 	}
+	.skills,
+	.portfolio,
+	.about {
+		padding: 4em;
+		text-align: left;
+	}
 	.portfolio img {
 		float: right;
 		max-width: 500px;
-	}
-	.about img {
-		float: right;
-		max-width: 300px;
 	}
 	.footer-design {
 		position: absolute;
@@ -623,17 +620,23 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 1250px) {
+	html {
+		font-size: 16px;
+	}
 	header {
 		padding: 2em 2em 2em 10em;
 	}
 	.social-header {
 		padding: 2em 10em 2em 0;
 	}
-	section {
-		padding: 10em 10em 4em 10em;
-	}
-	.hero .content {
+	.hero .hero-content {
 		padding: 6em 8em 6em 10em;
+	}
+	.skills,
+	.portfolio,
+	.about,
+	.contact {
+		padding: 10em 10em 4em 10em;
 	}
 }
 
@@ -644,13 +647,19 @@ input[type="submit"]:hover {
 	.social-header {
 		padding: 2em 20em 2em 0;
 	}
-	section {
-		padding: 6em 20em 4em 20em;
-	}
-	.hero .content {
+	.hero .hero-content {
 		padding: 9em 20em 6em 20em;
 	}
-	.about,
+	.skills-container ul li {
+		padding: 2em;
+	}
+	.skills,
+	.portfolio {
+		padding: 6em 20em 4em 20em;
+	}
+	.about {
+		padding: 6em 25em 4em 25em;
+	}
 	.contact {
 		padding: 6em 30em 4em 30em;
 	}
