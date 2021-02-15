@@ -46,7 +46,7 @@ img {
 	font-size: 1.6rem;
 	margin-top: -0.4em;
 	display: inline-block;
-	padding: 0 1.6rem 0 0.4rem;
+	padding: 0 0.4rem;
 	border-bottom-width: 9px;
 	border-bottom-style: solid;
 }
@@ -63,7 +63,6 @@ img {
 	font-weight: bold;
 	color: #666;
 	letter-spacing: 0.2em;
-	padding-left: 0.4rem;
 	font-size: 0.85rem;
 }
 
@@ -122,7 +121,6 @@ header ul a {
 	color: #fff;
 	font-size: 1.1rem;
 	font-weight: bold;
-	padding: 0 1.4em 0 0.4em;
 	border-bottom: 5px solid #a72145;
 }
 
@@ -306,6 +304,7 @@ header ul a {
 .skills-container ul li {
 	padding: 1em;
 	margin-bottom: 1em;
+	text-align: center;
 }
 
 .skills-container ul li .icon-container {
@@ -325,6 +324,7 @@ header ul a {
 .skills-title {
 	color: #fff;
 	border-bottom-color: #2e2459;
+	text-align: center;
 }
 
 .skills-desc {
@@ -456,7 +456,7 @@ input[type="submit"]:hover {
 	overflow: hidden;
 }
 .footer-inner {
-	background: #2e2459;
+	background: #2a3439;
 	padding: 50px;
 }
 .footer-text {
@@ -641,6 +641,9 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 1550px) {
+	.title {
+		font-size: 1.8rem;
+	}
 	header {
 		padding: 2em 2em 2em 20em;
 	}

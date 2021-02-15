@@ -14,7 +14,7 @@ navLinks.forEach((link) => {
 gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline();
 
-tl.from(".content", {
+tl.from(".hero-content", {
 	y: "-30%",
 	opacity: 0,
 	duration: 2,
