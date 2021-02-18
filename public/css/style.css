@@ -75,8 +75,6 @@ img {
 }
 
 header {
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 0.5em 1.5em;
 }
@@ -86,8 +84,6 @@ header a {
 }
 
 header ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -228,7 +224,6 @@ header ul a {
 
 .hero {
 	background-color: #2e2459;
-	display: -ms-grid;
 	display: grid;
 	text-align: center;
 	padding: 4em;
@@ -242,8 +237,6 @@ header ul a {
 }
 
 .meet {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	margin: 0 auto;
 	width: 200px;
@@ -299,9 +292,44 @@ header ul a {
 
 .skills {
 	background: #0b7261;
+	color: #fff;
 }
 
-.skills-container ul li {
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.skill {
+	margin-right: 2em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.skill > div {
+	margin-top: 2em;
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.skills-icon img {
+	width: 64px;
+}
+
+.skills-title {
+	color: #fff;
+	border-bottom-color: #2e2459;
+	text-align: center;
+	display: inline-block;
+}
+.skills-desc {
+	text-align: center;
+	height: 120px;
+}
+
+/* .skills-container ul li {
 	padding: 1em;
 	margin-bottom: 1em;
 	text-align: center;
@@ -309,7 +337,6 @@ header ul a {
 
 .skills-container ul li .icon-container {
 	height: 100px;
-	display: -ms-grid;
 	display: grid;
 	place-content: center;
 	margin: 0 auto;
@@ -329,7 +356,7 @@ header ul a {
 
 .skills-desc {
 	color: #fff;
-}
+} */
 
 .portfolio {
 	position: relative;
@@ -504,9 +531,7 @@ input[type="submit"]:hover {
 	}
 	.portfolio-container,
 	.about-container {
-		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: 40% auto;
 		grid-template-columns: 40% auto;
 	}
 	.left,
@@ -522,13 +547,14 @@ input[type="submit"]:hover {
 	.skills {
 		padding-top: 7em;
 	}
-	.skills-container ul {
-		display: -ms-grid;
+	.skills-container {
+		flex-direction: row;
+	}
+	/* .skills-container ul {
 		display: grid;
-		-ms-grid-columns: repeat(3, auto);
 		grid-template-columns: repeat(3, auto);
 		grid-gap: 1em;
-	}
+	} */
 	.portfolio {
 		padding-top: 7em;
 	}
@@ -545,9 +571,7 @@ input[type="submit"]:hover {
 
 @media only screen and (min-width: 1050px) {
 	.nav-container {
-		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: 66% auto;
 		grid-template-columns: 66% auto;
 		background: unset;
 	}
@@ -561,11 +585,7 @@ input[type="submit"]:hover {
 		display: block;
 	}
 	.social-header ul {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
 		justify-content: space-between;
 		width: 8em;
 		float: right;
@@ -574,11 +594,9 @@ input[type="submit"]:hover {
 		width: 26px;
 	}
 	.hero {
-		height: 90vh;
+		min-height: 90vh;
 		background-color: #fff;
-		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: 66% auto;
 		grid-template-columns: 66% auto;
 		background: unset;
 		padding: 0;
@@ -674,24 +692,20 @@ input[type="submit"]:hover {
 
 @-webkit-keyframes circleAnim {
 	from {
-		-webkit-transform: translate(262px, 798px);
 		transform: translate(262px, 798px);
 		z-index: 5;
 	}
 	to {
-		-webkit-transform: translate(262px, 830px);
 		transform: translate(262px, 830px);
 	}
 }
 
 @keyframes circleAnim {
 	from {
-		-webkit-transform: translate(262px, 798px);
 		transform: translate(262px, 798px);
 		z-index: 5;
 	}
 	to {
-		-webkit-transform: translate(262px, 830px);
 		transform: translate(262px, 830px);
 	}
 }

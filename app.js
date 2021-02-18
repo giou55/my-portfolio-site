@@ -41,12 +41,12 @@ app.post("/send", (req, res) => {
 		if (error) {
 			return console.log(error);
 		}
-		res.render("home", { msg: "Email has been sent" });
+		res.render("home", { layout: false, msg: "Email has been sent" });
 	});
 });
 
 app.get("/", (req, res) => {
-	res.render("home");
+	res.render("home", { layout: false });
 });
 
 app.listen(process.env.PORT | 3000);
