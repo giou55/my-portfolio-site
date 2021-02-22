@@ -358,6 +358,7 @@ header ul a {
 	top: 0;
 	left: 0;
 	z-index: 10;
+	opacity: 0.2;
 }
 
 .portfolio-container {
@@ -365,7 +366,11 @@ header ul a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin: 40px auto;
+	margin: 8rem auto;
+}
+
+.portfolio-container:first-child {
+	margin-top: 2rem;
 }
 
 .portfolio-text {
@@ -389,6 +394,24 @@ header ul a {
 
 .portfolio-image img {
 	border-radius: 1em;
+}
+
+.portfolio-links {
+	margin-bottom: 2rem;
+}
+
+.portfolio-links button {
+	margin-right: 1.4rem;
+	padding: 0.5rem 1rem;
+	background: var(--red-color);
+	border: none;
+	border-radius: 4px;
+}
+
+.portfolio-links button a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
 }
 
 .about-container {
@@ -429,6 +452,7 @@ header ul a {
 .contact-title {
 	color: #333;
 	border-bottom-color: var(--yellow-color);
+	margin-top: 1rem;
 }
 
 .contact-desc {
@@ -670,6 +694,9 @@ button.btn:hover {
 	.contact {
 		padding: 10em 10em 4em 10em;
 	}
+	.about-desc {
+		padding-right: 4em;
+	}
 }
 
 @media only screen and (min-width: 1550px) {
@@ -694,6 +721,9 @@ button.btn:hover {
 	}
 	.about {
 		padding: 6em 25em 4em 25em;
+	}
+	.about-desc {
+		padding-right: 5em;
 	}
 	.contact {
 		padding: 6em 30em 4em 30em;

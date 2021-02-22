@@ -6,7 +6,6 @@ const emailInput = document.querySelector("[name=email");
 const messageInput = document.querySelector("[name=message");
 const button = document.querySelector(".btn");
 
-
 // open and close sidenav
 navToggle.addEventListener("click", () => {
 	document.body.classList.toggle("nav-open");
@@ -17,7 +16,6 @@ navLinks.forEach((link) => {
 		document.body.classList.remove("nav-open");
 	});
 });
-
 
 // function for making asynchronous request from button
 const sendMessage = () => {
@@ -44,7 +42,6 @@ const sendMessage = () => {
 		msg.innerHTML = "<span>&#10003;</span> Email has been sent";
 	});
 };
-
 
 // animations
 gsap.registerPlugin(ScrollTrigger);
