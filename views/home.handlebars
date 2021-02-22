@@ -364,8 +364,7 @@
 
 		<section class="about" id="about">
 			<div class="about-container transition3">
-				<div class="about-left">
-					<div class="inner">
+				<div class="about-text">
 						<p class="title about-title">About Me</p>
 						<p class="description about-desc">
 							Hi! I am Giorgos Giourmetakis, a
@@ -381,11 +380,10 @@
 							stuff, cooking delicious food, listening my favorite
 							music and walking in the city :).
 						</p>
-					</div>
 				</div>
-				<a href="#"
-					><img src="images/myphoto.png" alt="giorgos giourmetakis"
-				/></a>
+				<div class="about-image">
+					<img src="images/myphoto.png" alt="giorgos giourmetakis" />
+				</div>
 			</div>
 		</section>
 
@@ -396,9 +394,8 @@
 				Do you have an interesting project I can help with?<br> 
 				Feel free to reach out to me by using the form below.
 			</p>
-            <p>{{msg}}</p>
+            <p class="message"></p>
 			<div class="form-container">
-				<form method="POST" action="send">
 					<label for="name">Name</label>
 					<input type="text" name="name" required />
 
@@ -408,8 +405,7 @@
 					<label for="message">Message</label>
 					<textarea name="message" style="height: 200px"></textarea>
 
-					<input type="submit" value="Send Message" />
-				</form>
+					<button type="button" class="btn" onclick="sendMessage()">Send Message</button>
 			</div>
 		</section>
 
@@ -451,7 +447,7 @@
 						height="172"
 						rx="86"
 						transform="translate(1278 461)"
-						fill="#a72145"
+						fill="#ffc832"
 					/>
 					<rect
 						data-name="Rectangle 8"
@@ -483,7 +479,7 @@
 						height="172"
 						rx="86"
 						transform="translate(1107 633)"
-						fill="#a72145"
+						fill="#ffc832"
 					/>
 					<rect
 						data-name="Rectangle 7"

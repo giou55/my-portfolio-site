@@ -71,7 +71,7 @@ img {
 .subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #666;
+	color: #ccc;
 	letter-spacing: 0.2em;
 	font-size: 0.85rem;
 }
@@ -343,6 +343,8 @@ header ul a {
 }
 
 .portfolio {
+	background: var(--blue-color);
+	color: #fff;
 	position: relative;
 }
 
@@ -352,10 +354,10 @@ header ul a {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background: #fbeecb;
+	background: #514975;
 	top: 0;
 	left: 0;
-	z-index: -1;
+	z-index: 10;
 }
 
 .portfolio-container {
@@ -366,23 +368,35 @@ header ul a {
 	margin: 40px auto;
 }
 
-.portfolio-text,
+.portfolio-text {
+	flex: 1 1 350px;
+}
+
 .portfolio-image {
-	flex: 1 0 400px;
+	flex: 1 1 350px;
 }
 
 .portfolio-title {
-	color: #333;
-	border-bottom-color: var(--yellow-color);
+	color: #fff;
+	/* border-bottom-color: var(--yellow-color); */
+	border-bottom-color: var(--red-color);
 }
 
 .portfolio-desc {
-	color: #333;
-	padding-right: 2em;
+	color: #fff;
+	padding-right: 0;
 }
 
 .portfolio-image img {
 	border-radius: 1em;
+}
+
+.about-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px auto;
 }
 
 .about {
@@ -396,15 +410,16 @@ header ul a {
 
 .about-desc {
 	color: #fff;
+	padding-right: 0;
 }
 
-.about-container a {
-	cursor: default;
+.about-text {
+	flex: 1 1 350px;
 }
 
-.about-container a img {
-	margin-bottom: 2em;
-	max-width: 250px;
+.about-image {
+	flex: 0 1 250px;
+	margin: 0 auto;
 }
 
 .contact {
@@ -421,6 +436,22 @@ header ul a {
 }
 
 /* contact form */
+
+.message {
+	background-color: #ffc832;
+	border-radius: 4px;
+	display: none;
+	color: #000;
+	margin-top: -1em;
+	padding: 2px 20px;
+	font-size: 1rem;
+}
+
+.message span {
+	font-weight: bold;
+	font-size: 1.1rem;
+	margin-right: 0.5rem;
+}
 
 .form-container {
 	border: 1px solid #bbb;
@@ -444,7 +475,7 @@ textarea {
 	resize: vertical;
 }
 
-input[type="submit"] {
+button.btn {
 	background-color: var(--yellow-color);
 	color: #000;
 	width: 100%;
@@ -453,6 +484,7 @@ input[type="submit"] {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+	transition: 200ms;
 }
 
 input[type="text"]:focus,
@@ -461,8 +493,8 @@ textarea:focus {
 	box-shadow: 0 0 5px 1px var(--yellow-color);
 }
 
-input[type="submit"]:hover {
-	background-color: #fcc01b;
+button.btn:hover {
+	background-color: #fabc10;
 }
 
 /* footer */
@@ -494,6 +526,15 @@ input[type="submit"]:hover {
 @media only screen and (min-width: 400px) {
 	.hero {
 		padding: 4em 8em;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.portfolio-desc {
+		padding-right: 2em;
+	}
+	.about-desc {
+		padding-right: 2em;
 	}
 }
 
@@ -535,9 +576,14 @@ input[type="submit"]:hover {
 	.portfolio {
 		padding-top: 7em;
 	}
-
+	.portfolio-desc {
+		padding-right: 3em;
+	}
 	.about {
 		padding-top: 7em;
+	}
+	.about-desc {
+		padding-right: 3em;
 	}
 }
 

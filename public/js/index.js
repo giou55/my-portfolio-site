@@ -1,6 +1,12 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
 
+const msg = document.querySelector(".message");
+const nameInput = document.querySelector("[name=name");
+const emailInput = document.querySelector("[name=email");
+const messageInput = document.querySelector("[name=message");
+const button = document.querySelector(".btn");
+
 navToggle.addEventListener("click", () => {
 	document.body.classList.toggle("nav-open");
 });
@@ -10,6 +16,31 @@ navLinks.forEach((link) => {
 		document.body.classList.remove("nav-open");
 	});
 });
+
+const sendMessage = () => {
+	const name = nameInput.value;
+	const email = emailInput.value;
+	const message = messageInput.value;
+	button.innerHTML = "Sending...";
+	fetch("/sendmessage", {
+		method: "POST",
+		body: JSON.stringify({
+			name: name,
+			email: email,
+			message: message,
+		}),
+		headers: {
+			"Content-Type": "application/json",
+		},
+	}).then(() => {
+		button.innerHTML = "Send Message";
+		nameInput.value = "";
+		emailInput.value = "";
+		messageInput.value = "";
+		msg.style.display = "inline-block";
+		msg.innerHTML = "<span>&#10003;</span> Email has been sent";
+	});
+};
 
 gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline();

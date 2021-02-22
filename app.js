@@ -22,7 +22,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.post("/send", (req, res) => {
+app.post("/sendmessage", (req, res) => {
 	const output = `
     <h3>ΣΤΟΙΧΕΙΑ ΑΠΟΣΤΟΛΕΑ</h3> 
 	<p>Όνομα: ${req.body.name}<br>Email: ${req.body.email}</p>
@@ -41,7 +41,8 @@ app.post("/send", (req, res) => {
 		if (error) {
 			return console.log(error);
 		}
-		res.render("home", { layout: false, msg: "Email has been sent" });
+		// res.render("home", { layout: false, msg: "Email has been sent" });
+		res.json({ msg: "Email has been sent" });
 	});
 });
 
