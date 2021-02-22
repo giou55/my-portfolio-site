@@ -41,7 +41,6 @@ app.post("/sendmessage", (req, res) => {
 		if (error) {
 			return console.log(error);
 		}
-		// res.render("home", { layout: false, msg: "Email has been sent" });
 		res.json({ msg: "Email has been sent" });
 	});
 });

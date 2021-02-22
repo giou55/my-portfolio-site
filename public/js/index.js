@@ -1,12 +1,13 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
-
 const msg = document.querySelector(".message");
 const nameInput = document.querySelector("[name=name");
 const emailInput = document.querySelector("[name=email");
 const messageInput = document.querySelector("[name=message");
 const button = document.querySelector(".btn");
 
+
+// open and close sidenav
 navToggle.addEventListener("click", () => {
 	document.body.classList.toggle("nav-open");
 });
@@ -17,6 +18,8 @@ navLinks.forEach((link) => {
 	});
 });
 
+
+// function for making asynchronous request from button
 const sendMessage = () => {
 	const name = nameInput.value;
 	const email = emailInput.value;
@@ -42,6 +45,8 @@ const sendMessage = () => {
 	});
 };
 
+
+// animations
 gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline();
 
