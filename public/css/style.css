@@ -366,7 +366,7 @@ header ul a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin: 8rem auto;
+	margin: 5rem auto 2rem auto;
 }
 
 .portfolio-container:first-child {
@@ -400,8 +400,8 @@ header ul a {
 }
 
 .portfolio-links button {
-	margin-right: 1.4rem;
-	padding: 0.5rem 1.2rem;
+	margin-right: 1.2rem;
+	padding: 0.5rem 1rem;
 	background: var(--yellow-color);
 	border: 1px solid var(--yellow-color);
 	border-radius: 4px;
@@ -414,7 +414,7 @@ header ul a {
 .portfolio-links button a {
 	text-decoration: none;
 	color: #000;
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
 .about-container {
@@ -506,8 +506,8 @@ button.btn {
 	background-color: var(--yellow-color);
 	color: #000;
 	width: 100%;
-	padding: 12px 20px;
-	font-size: 1.1rem;
+	padding: 0.5rem 2rem;
+	font-size: 1.2rem;
 	border: 1px solid var(--yellow-color);
 	border-radius: 4px;
 	cursor: pointer;
@@ -565,6 +565,10 @@ button.btn:hover {
 	.portfolio-desc {
 		padding-right: 2em;
 	}
+	.portfolio-links button {
+		margin-right: 1.4rem;
+		padding: 0.5rem 2rem;
+	}
 	.about-desc {
 		padding-right: 2em;
 	}
@@ -606,7 +610,8 @@ button.btn:hover {
 		flex-direction: row;
 	}
 	.portfolio {
-		padding-top: 7em;
+		padding-top: 6em;
+		padding-bottom: 6em;
 	}
 	.portfolio-desc {
 		padding-right: 3em;
@@ -700,7 +705,7 @@ button.btn:hover {
 	.portfolio,
 	.about,
 	.contact {
-		padding: 10em 10em 4em 10em;
+		padding: 8em 10em 5em 10em;
 	}
 	.about-desc {
 		padding-right: 4em;
