@@ -5,6 +5,7 @@ const nameInput = document.querySelector("[name=name");
 const emailInput = document.querySelector("[name=email");
 const messageInput = document.querySelector("[name=message");
 const button = document.querySelector(".btn");
+// button.disabled = true;
 
 // open and close sidenav
 navToggle.addEventListener("click", () => {
@@ -22,25 +23,27 @@ const sendMessage = () => {
 	const name = nameInput.value;
 	const email = emailInput.value;
 	const message = messageInput.value;
-	button.innerHTML = "Sending...";
-	fetch("/sendmessage", {
-		method: "POST",
-		body: JSON.stringify({
-			name: name,
-			email: email,
-			message: message,
-		}),
-		headers: {
-			"Content-Type": "application/json",
-		},
-	}).then(() => {
-		button.innerHTML = "Send Message";
-		nameInput.value = "";
-		emailInput.value = "";
-		messageInput.value = "";
-		msg.style.display = "inline-block";
-		msg.innerHTML = "<span>&#10003;</span> Email has been sent";
-	});
+	if (name != "" && (email != "") & (message != "")) {
+		button.innerHTML = "Sending...";
+		fetch("/sendmessage", {
+			method: "POST",
+			body: JSON.stringify({
+				name: name,
+				email: email,
+				message: message,
+			}),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		}).then(() => {
+			button.innerHTML = "Send Message";
+			nameInput.value = "";
+			emailInput.value = "";
+			messageInput.value = "";
+			msg.style.display = "inline-block";
+			msg.innerHTML = "<span>&#10003;</span> Email has been sent";
+		});
+	}
 };
 
 // animations

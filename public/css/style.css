@@ -71,7 +71,7 @@ img {
 .subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #ccc;
+	color: #666;
 	letter-spacing: 0.2em;
 	font-size: 0.85rem;
 }
@@ -343,8 +343,8 @@ header ul a {
 }
 
 .portfolio {
-	background: var(--blue-color);
-	color: #fff;
+	background: #fff;
+	color: #000;
 	position: relative;
 }
 
@@ -354,7 +354,7 @@ header ul a {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background: #514975;
+	background: #f9d36a;
 	top: 0;
 	left: 0;
 	z-index: 10;
@@ -382,13 +382,12 @@ header ul a {
 }
 
 .portfolio-title {
-	color: #fff;
-	/* border-bottom-color: var(--yellow-color); */
-	border-bottom-color: var(--red-color);
+	color: #000;
+	border-bottom-color: var(--yellow-color);
 }
 
 .portfolio-desc {
-	color: #fff;
+	color: #000;
 	padding-right: 0;
 }
 
@@ -402,15 +401,19 @@ header ul a {
 
 .portfolio-links button {
 	margin-right: 1.4rem;
-	padding: 0.5rem 1rem;
-	background: var(--red-color);
-	border: none;
+	padding: 0.5rem 1.2rem;
+	background: var(--yellow-color);
+	border: 1px solid var(--yellow-color);
 	border-radius: 4px;
+}
+
+.portfolio-links button:hover {
+	border-color: #000;
 }
 
 .portfolio-links button a {
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	font-size: 1rem;
 }
 
@@ -505,20 +508,25 @@ button.btn {
 	width: 100%;
 	padding: 12px 20px;
 	font-size: 1.1rem;
-	border: none;
+	border: 1px solid var(--yellow-color);
 	border-radius: 4px;
 	cursor: pointer;
 	transition: 200ms;
+}
+button.btn[disabled] {
+	cursor: not-allowed;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-	box-shadow: 0 0 5px 1px var(--yellow-color);
+	border: 1px solid #333;
+	/* box-shadow: 0 0 5px 1px var(--yellow-color); */
 }
 
 button.btn:hover {
-	background-color: #fabc10;
+	/* background-color: #fabc10; */
+	border: 1px solid #000;
 }
 
 /* footer */
