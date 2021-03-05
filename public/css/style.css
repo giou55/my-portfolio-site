@@ -513,19 +513,14 @@ button.btn {
 	cursor: pointer;
 	transition: 200ms;
 }
-button.btn[disabled] {
-	cursor: not-allowed;
-}
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
 	border: 1px solid #333;
-	/* box-shadow: 0 0 5px 1px var(--yellow-color); */
 }
 
 button.btn:hover {
-	/* background-color: #fabc10; */
 	border: 1px solid #000;
 }
 

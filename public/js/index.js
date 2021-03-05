@@ -5,7 +5,13 @@ const nameInput = document.querySelector("[name=name");
 const emailInput = document.querySelector("[name=email");
 const messageInput = document.querySelector("[name=message");
 const button = document.querySelector(".btn");
-// button.disabled = true;
+
+function handleForm(event) {
+	event.preventDefault();
+	sendMessage();
+}
+const form = document.querySelector("form");
+form.addEventListener("submit", handleForm);
 
 // open and close sidenav
 navToggle.addEventListener("click", () => {
