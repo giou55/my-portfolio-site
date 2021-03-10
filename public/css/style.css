@@ -14,6 +14,8 @@
 	--green-color: #0b7261;
 	--yellow-color: #ffc832;
 	--grey-color: #2a3439;
+	--brown-color: #932322;
+	--dodgerblue-color: #19a4dc;
 }
 
 html {
@@ -57,8 +59,8 @@ img {
 	margin-top: -0.4em;
 	display: inline-block;
 	padding: 0 0.4rem;
-	border-bottom-width: 9px;
-	border-bottom-style: solid;
+	/* border-bottom-width: 9px;
+	border-bottom-style: solid; */
 }
 
 .description {
@@ -103,11 +105,11 @@ header ul a {
 }
 
 .header-mobile {
-	background: var(--blue-color);
+	background-color: #08658a;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 3px solid var(--red-color);
+	/* border-bottom: 3px solid var(--red-color); */
 }
 
 .header-mobile .logo {
@@ -119,7 +121,8 @@ header ul a {
 }
 
 .header-desktop {
-	background: var(--blue-color);
+	/* background: var(--dodgerblue-color); */
+	background-color: #08658a;
 	display: none;
 }
 
@@ -127,7 +130,7 @@ header ul a {
 	color: #fff;
 	font-size: 1.1rem;
 	font-weight: bold;
-	border-bottom: 5px solid var(--red-color);
+	/* border-bottom: 5px solid var(--red-color); */
 }
 
 .nav {
@@ -233,7 +236,7 @@ header ul a {
 }
 
 .hero {
-	background-color: var(--blue-color);
+	background-color: #0981b1;
 	display: grid;
 	text-align: center;
 	padding: 4em;
@@ -241,7 +244,7 @@ header ul a {
 }
 
 .hero-content {
-	background: var(--blue-color);
+	background: #0981b1;
 	color: white;
 	text-align: center;
 }
@@ -279,7 +282,7 @@ header ul a {
 	align-items: center;
 	color: #fff;
 	font-size: 1rem;
-	background-color: var(--red-color);
+	background-color: var(--brown-color);
 	margin-top: 50px;
 	padding: 5px 10px;
 }
@@ -301,7 +304,8 @@ header ul a {
 }
 
 .skills {
-	background: var(--green-color);
+	/* background: var(--green-color); */
+	background-color: var(--brown-color);
 	color: #fff;
 }
 
@@ -321,7 +325,7 @@ header ul a {
 	margin-right: 2em;
 }
 .skill > div {
-	margin-top: 2em;
+	margin-top: 0;
 	flex: 1;
 	display: flex;
 	align-items: flex-end;
@@ -333,7 +337,7 @@ header ul a {
 
 .skills-title {
 	color: #fff;
-	border-bottom-color: var(--blue-color);
+	/* border-bottom-color: var(--blue-color); */
 	text-align: center;
 	display: inline-block;
 }
@@ -383,7 +387,7 @@ header ul a {
 
 .portfolio-title {
 	color: #000;
-	border-bottom-color: var(--yellow-color);
+	border-bottom-color: var(--dodgerblue-color);
 }
 
 .portfolio-desc {
@@ -402,8 +406,8 @@ header ul a {
 .portfolio-links button {
 	margin-right: 1.2rem;
 	padding: 0.5rem 1rem;
-	background: var(--yellow-color);
-	border: 1px solid var(--yellow-color);
+	background: var(--brown-color);
+	border: 1px solid var(--brown-color);
 	border-radius: 4px;
 }
 
@@ -413,7 +417,7 @@ header ul a {
 
 .portfolio-links button a {
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 	font-size: 1.2rem;
 }
 
@@ -426,12 +430,12 @@ header ul a {
 }
 
 .about {
-	background: var(--red-color);
+	background: var(--brown-color);
 }
 
 .about-title {
 	color: #fff;
-	border-bottom-color: var(--blue-color);
+	border-bottom-color: var(--dodgerblue-color);
 }
 
 .about-desc {
@@ -454,7 +458,7 @@ header ul a {
 
 .contact-title {
 	color: #333;
-	border-bottom-color: var(--yellow-color);
+	border-bottom-color: var(--dodgerblue-color);
 	margin-top: 1rem;
 }
 
@@ -503,12 +507,12 @@ textarea {
 }
 
 button.btn {
-	background-color: var(--yellow-color);
-	color: #000;
+	background-color: var(--brown-color);
+	color: #fff;
 	width: 100%;
 	padding: 0.5rem 2rem;
 	font-size: 1.2rem;
-	border: 1px solid var(--yellow-color);
+	border: 1px solid var(--brown-color);
 	border-radius: 4px;
 	cursor: pointer;
 	transition: 200ms;
@@ -535,7 +539,7 @@ button.btn:hover {
 	overflow: hidden;
 }
 .footer-inner {
-	background: var(--grey-color);
+	background: #0981b1;
 	padding: 50px;
 }
 .footer-text {
@@ -603,6 +607,9 @@ button.btn:hover {
 	}
 	.skills-container {
 		flex-direction: row;
+	}
+	.skill > div {
+		margin-top: 2em;
 	}
 	.portfolio {
 		padding-top: 6em;
