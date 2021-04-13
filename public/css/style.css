@@ -71,7 +71,7 @@ img {
 .subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #fbe8da;
+	color: #bbb;
 	letter-spacing: 0.2em;
 	font-size: 0.85rem;
 }
@@ -340,7 +340,7 @@ header ul a {
 }
 
 .portfolio {
-	background-color: var(--secondary-color);
+	background-color: var(--primary-darkcolor);
 	position: relative;
 }
 
