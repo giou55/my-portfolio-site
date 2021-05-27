@@ -147,7 +147,7 @@
 						height="172"
 						rx="19"
 						transform="translate(1278 289)"
-						fill="#012965"
+						fill="#0c132c"
 					></rect>
 					<rect
 						class="square-anim"
@@ -156,7 +156,7 @@
 						height="172"
 						rx="86"
 						transform="translate(1278 461)"
-						fill="#999"
+						fill="#0c132c"
 					></rect>
 					<rect
 						class="square-anim"
@@ -165,7 +165,7 @@
 						height="172"
 						rx="19"
 						transform="translate(1449 461)"
-						fill="#abcaf3"
+						fill="#335dff"
 					></rect>
 					<rect
 						class="square-anim"
@@ -174,7 +174,7 @@
 						height="172"
 						rx="19"
 						transform="translate(1278 633)"
-						fill="#012965"
+						fill="#0c132c"
 					></rect>
 					<rect
 						class="square-anim"
@@ -572,31 +572,50 @@
 		</section>
 
 		<section class="contact" id="contact">
-			<p class="title contact-title">Get In Touch</p>
-			<p class="description contact-desc">
-				Do you have an interesting project I can help with?<br />
-				Feel free to reach out to me by using the form below.
-			</p>
-			<p class="message"></p>
-			<div class="form-container">
-				<form action="">
-					<label for="name">Name</label>
-					<input type="text" name="name" required />
-
-					<label for="email">Email</label>
-					<input type="email" name="email" required />
-
-					<label for="message">Message</label>
-					<textarea
-						name="message"
-						required
-						style="height: 200px"
-					></textarea>
-
-					<button type="submit" class="btn">Send Message</button>
-				</form>
-
-			</div>
+                <div class="contact-headers">
+                    <p class="title contact-title">Get In Touch</p>
+                    <p class="description contact-desc">
+                        Do you have an interesting project I can help with?<br />
+                        Feel free to reach out to me by using the form below.
+                    </p>
+                    <p class="message"></p>
+                </div>
+				
+				<div class="form-container">
+					<form action="">
+						<div class="row">
+							<div class="col-25">
+								<label for="name">Name</label>
+							</div>
+							<div class="col-75">
+								<input type="text" name="name" required />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="email">Email</label>
+							</div>
+							<div class="col-75">
+								<input type="email" name="email" required />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="message">Message</label>
+							</div>
+							<div class="col-75">
+								<textarea
+									name="message"
+									required
+									style="height: 150px"
+								></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<button type="submit" class="btn">Send Message</button>
+						</div>
+					</form>
+				</div>
 		</section>
 
 		<section class="footer">
