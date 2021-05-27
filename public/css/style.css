@@ -428,7 +428,6 @@ header ul a {
 .about-image {
 	flex: 0 1 250px;
 	margin: 0 auto;
-	transform: rotate(5deg);
 }
 
 .contact {
