@@ -69,7 +69,7 @@ img {
 .subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #666;
+	color: var(--orange);
 	letter-spacing: 0.2em;
 	font-size: 0.85rem;
 }
