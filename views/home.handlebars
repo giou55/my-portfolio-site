@@ -1,10 +1,22 @@
 <html lang="en">
+	
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Giorgos Giourmetakis - Web Developer</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"
+		></script>
+
+		<script src="js/index.js" defer></script>
 	</head>
+
 	<body>
 		<div class="nav-container">
 			<header class="header-desktop">
@@ -376,12 +388,14 @@
 						<p class="title portfolio-title">Flicher.gr</p>
 					</div>
 					<p class="description portfolio-desc">
-						Flicher is a magazine about media, movies and
-						books. There is a administration area where every editor
-						can create and upload his own post.<br />
+						Flicher is a magazine about media, movies and books.
+						There is a administration area where every editor can
+						create and upload his own post.<br />
 						For this project I use
 						<span class="bold-text">Laravel</span>
-						PHP framework, <span class="bold-text">Bootstrap</span> and
+						PHP framework,
+						<span class="bold-text">Bootstrap</span>
+						and
 						<span class="bold-text">MySQL</span>
 						database.
 					</p>
@@ -572,50 +586,50 @@
 		</section>
 
 		<section class="contact" id="contact">
-                <div class="contact-headers">
-                    <p class="title contact-title">Get In Touch</p>
-                    <p class="description contact-desc">
-                        Do you have an interesting project I can help with?<br />
-                        Feel free to reach out to me by using the form below.
-                    </p>
-                    <p class="message"></p>
-                </div>
-				
-				<div class="form-container">
-					<form action="">
-						<div class="row">
-							<div class="col-25">
-								<label for="name">Name</label>
-							</div>
-							<div class="col-75">
-								<input type="text" name="name" required />
-							</div>
+			<div class="contact-headers">
+				<p class="title contact-title">Get In Touch</p>
+				<p class="description contact-desc">
+					Do you have an interesting project I can help with?<br />
+					Feel free to reach out to me by using the form below.
+				</p>
+				<p class="message"></p>
+			</div>
+
+			<div class="form-container">
+				<form action="">
+					<div class="row">
+						<div class="col-25">
+							<label for="name">Name</label>
 						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="email">Email</label>
-							</div>
-							<div class="col-75">
-								<input type="email" name="email" required />
-							</div>
+						<div class="col-75">
+							<input type="text" name="name" required />
 						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="message">Message</label>
-							</div>
-							<div class="col-75">
-								<textarea
-									name="message"
-									required
-									style="height: 150px"
-								></textarea>
-							</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="email">Email</label>
 						</div>
-						<div class="row">
-							<button type="submit" class="btn">Send Message</button>
+						<div class="col-75">
+							<input type="email" name="email" required />
 						</div>
-					</form>
-				</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="message">Message</label>
+						</div>
+						<div class="col-75">
+							<textarea
+								name="message"
+								required
+								style="height: 150px"
+							></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<button type="submit" class="btn">Send Message</button>
+					</div>
+				</form>
+			</div>
 		</section>
 
 		<section class="footer">
@@ -632,16 +646,5 @@
 			</div>
 		</section>
 
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-			crossorigin="anonymous"
-		></script>
-
-		<script
-			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"
-		></script>
-
-		<script src="js/index.js"></script>
 	</body>
 </html>

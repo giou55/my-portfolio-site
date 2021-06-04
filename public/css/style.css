@@ -9,11 +9,10 @@
 }
 
 :root {
-	--mediumblue: #012965;
 	--darkblue: #0c132c;
+	--mediumblue: #1040fd;
+	--lightblue: #335dff;
 	--lightgrey: #f5f5f5;
-	--orange: #335dff;
-	--darkorange: #000;
 }
 
 html {
@@ -69,7 +68,7 @@ img {
 .subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: var(--orange);
+	color: var(--lightblue);
 	letter-spacing: 0.2em;
 	font-size: 0.85rem;
 }
@@ -98,7 +97,11 @@ header ul {
 
 header ul a {
 	display: block;
-	padding: 0 1em;
+	margin: 0 1em;
+}
+
+header ul a:hover {
+	border-bottom: 2px solid #fff ;
 }
 
 .header-mobile {
@@ -250,7 +253,7 @@ header ul a {
 	font-weight: bold;
 	border-radius: 5px;
 	color: #fff;
-	background-color: var(--orange);
+	background-color: var(--lightblue);
 }
 
 .meet span {
@@ -276,7 +279,7 @@ header ul a {
 	align-items: center;
 	color: #fff;
 	font-size: 1rem;
-	background-color: var(--orange);
+	background-color: var(--lightblue);
 	margin-top: 50px;
 	padding: 5px 10px;
 }
@@ -288,7 +291,11 @@ header ul a {
 	width: 25px;
 }
 
-.skills,
+.skills {
+	padding: 4em;
+	text-align: center;
+}
+
 .portfolio,
 .about,
 .footer {
@@ -317,7 +324,8 @@ header ul a {
 	border-radius: 5px;
 }
 .skill:not(:last-child) {
-	margin-right: 2em;
+	margin-right: 0;
+	margin-bottom: 3rem;
 }
 .skill:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -341,7 +349,6 @@ header ul a {
 .skills-desc {
 	color: #555;
 	text-align: center;
-	height: 120px;
 }
 
 .portfolio {
@@ -389,13 +396,14 @@ header ul a {
 .portfolio-links button {
 	margin-right: 1.2rem;
 	padding: 0.5rem 1rem;
-	background-color: var(--orange);
+	background-color: var(--lightblue);
 	border: none;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .portfolio-links button:hover {
-	background-color: var(--darkorange);
+	background-color: var(--mediumblue);
 }
 
 .portfolio-links button a {
@@ -607,11 +615,15 @@ button.btn:hover {
 		margin-top: 1em;
 	}
 	.skills {
-		padding-top: 7em;
+		padding: 6em 0;
 	}
 	.skills-container {
 		flex-direction: row;
 	}
+	.skill:not(:last-child) {
+	    margin-right: 3em;
+		margin-bottom: 0;
+    }
 	.skill > div {
 		margin-top: 2em;
 	}
@@ -679,7 +691,10 @@ button.btn:hover {
 		margin-top: 15%;
 		width: 100%;
 	}
-	.skills,
+	.skills {
+		padding: 5em 4em;
+		text-align: left;
+	}
 	.portfolio,
 	.about {
 		padding: 4em;
@@ -741,7 +756,7 @@ button.btn:hover {
 	}
 	.skills,
 	.portfolio {
-		padding: 6em 20em 4em 20em;
+		padding: 6em 20em 6em 20em;
 	}
 	.about {
 		padding: 6em 25em 4em 25em;
