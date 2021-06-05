@@ -68,7 +68,7 @@ img {
 .subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: var(--lightblue);
+	color: #a631ff;
 	letter-spacing: 0.2em;
 	font-size: 0.85rem;
 }
@@ -101,7 +101,7 @@ header ul a {
 }
 
 header ul a:hover {
-	border-bottom: 2px solid #fff ;
+	border-bottom: 2px solid #fff;
 }
 
 .header-mobile {
@@ -331,7 +331,7 @@ header ul a:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .skill > div {
-	margin-top: 0;
+	margin-top: 1rem;
 	flex: 1;
 	display: flex;
 	align-items: flex-end;
@@ -409,7 +409,7 @@ header ul a:hover {
 .portfolio-links button a {
 	text-decoration: none;
 	color: #fff;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 .about-container {
@@ -438,6 +438,8 @@ header ul a:hover {
 	margin: 0 auto;
 }
 
+/* contact form */
+
 .contact {
 	padding: 0 2em;
 	text-align: center;
@@ -461,15 +463,15 @@ header ul a:hover {
 	margin-bottom: 0;
 }
 
-/* contact form */
-
 .message {
 	border-radius: 4px;
 	display: none;
 	color: #fff;
+	margin: 0;
 	margin-top: 1em;
 	padding: 2px 20px;
 	font-size: 1rem;
+	border: 1px solid #fff;
 }
 
 .message span {
@@ -502,19 +504,17 @@ label {
 	display: inline-block;
 }
 
-button.btn {
+.contact-btn {
 	background-color: var(--darkblue);
-	color: white;
-	margin-top: 12px;
-	padding: 12px 20px;
+	margin-top: 14px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	float: right;
-}
-
-button.btn:hover {
-	background-color: var(--darkblue);
+	float: none;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
 }
 
 .col-25 {
@@ -559,8 +559,7 @@ button.btn:hover {
 
 @media screen and (max-width: 600px) {
 	.col-25,
-	.col-75,
-	input[type="submit"] {
+	.col-75 {
 		width: 100%;
 		margin-top: 0;
 	}
@@ -580,8 +579,14 @@ button.btn:hover {
 		margin-right: 1.4rem;
 		padding: 0.5rem 2rem;
 	}
+	.contact-btn {
+		padding: 0.5rem 2rem;
+	}
 	.about-desc {
 		padding-right: 2em;
+	}
+	.contact-btn {
+		float: right;
 	}
 }
 
@@ -621,9 +626,9 @@ button.btn:hover {
 		flex-direction: row;
 	}
 	.skill:not(:last-child) {
-	    margin-right: 3em;
+		margin-right: 3em;
 		margin-bottom: 0;
-    }
+	}
 	.skill > div {
 		margin-top: 2em;
 	}

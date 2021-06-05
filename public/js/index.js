@@ -47,7 +47,7 @@ const sendMessage = () => {
 			emailInput.value = "";
 			messageInput.value = "";
 			msg.style.display = "inline-block";
-			msg.innerHTML = "<span>&#10003;</span> Email has been sent";
+			msg.innerHTML = "<span>&#10003;</span> Thank You! Email has been sent.";
 		});
 	}
 };
