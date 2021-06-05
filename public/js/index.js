@@ -4,7 +4,7 @@ const msg = document.querySelector(".message");
 const nameInput = document.querySelector("[name=name");
 const emailInput = document.querySelector("[name=email");
 const messageInput = document.querySelector("[name=message");
-const button = document.querySelector(".btn");
+const button = document.querySelector(".contact-btn");
 
 function handleForm(event) {
 	event.preventDefault();
