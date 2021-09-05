@@ -390,11 +390,16 @@ header ul a:hover {
 }
 
 .portfolio-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 2rem;
+	padding-right: 0;
 }
 
 .portfolio-links button {
-	margin-right: 1.2rem;
+	margin: 0.5rem;
 	padding: 0.5rem 1rem;
 	background-color: var(--lightblue);
 	border: none;
@@ -575,9 +580,11 @@ label {
 	.portfolio-desc {
 		padding-right: 2em;
 	}
+	.portfolio-links {
+		padding-right: 2em;
+	}
 	.portfolio-links button {
-		margin-right: 1.4rem;
-		padding: 0.5rem 2rem;
+		margin: 0.5rem 0.8rem;
 	}
 	.contact-btn {
 		padding: 0.5rem 2rem;
@@ -637,6 +644,9 @@ label {
 		padding-bottom: 6em;
 	}
 	.portfolio-desc {
+		padding-right: 3em;
+	}
+	.portfolio-links {
 		padding-right: 3em;
 	}
 	.about {
