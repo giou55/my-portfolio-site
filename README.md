@@ -1,5 +1,7 @@
 ## This is my portfolio website
 
-### Run the following commands
+### To run the app locally
 
 #### npm install
+
+#### npm run start or node app.js
