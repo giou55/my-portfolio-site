@@ -1,3 +1,5 @@
 ## This is my portfolio website
 
-### npm install
+### Run the following commands
+
+#### npm install
