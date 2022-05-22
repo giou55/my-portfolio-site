@@ -4,4 +4,6 @@
 
 #### npm install
 
-#### npm run start or node app.js
+#### npm run start
+#### or 
+#### node app.js
