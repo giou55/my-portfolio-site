@@ -675,7 +675,7 @@ label {
 	.social-header ul {
 		display: flex;
 		justify-content: space-between;
-		width: 8em;
+		width: 6em;
 		float: right;
 	}
 	.social-header ul img {
@@ -696,6 +696,9 @@ label {
 	.hero .hero-content h1 {
 		font-size: 3em;
 		line-height: 1.2em;
+	}
+	.content-desktop {
+		margin-top: 8rem;
 	}
 	.meet {
 		margin: unset;
@@ -781,6 +784,40 @@ label {
 	}
 	.contact {
 		padding: 0 30em 4em 30em;
+	}
+}
+
+@media only screen and (min-width: 2100px) {
+	.title {
+		font-size: 1.8rem;
+	}
+	header {
+		padding: 2em 2em 2em 30em;
+	}
+	.social-header {
+		padding: 2em 30em 2em 0;
+	}
+	.hero .hero-content {
+		padding: 9em 30em 6em 30em;
+	}
+	.content-desktop {
+		margin-top: 12rem;
+	}
+	.skills-container ul li {
+		padding: 2em;
+	}
+	.skills,
+	.portfolio {
+		padding: 6em 30em 6em 30em;
+	}
+	.about {
+		padding: 6em 40em 4em 40em;
+	}
+	.about-desc {
+		padding-right: 5em;
+	}
+	.contact {
+		padding: 0 50em 4em 50em;
 	}
 }
 
