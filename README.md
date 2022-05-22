@@ -1,1 +1,3 @@
-# personal-website-nodeJS
+# my-portfolio-site
+
+# npm install
