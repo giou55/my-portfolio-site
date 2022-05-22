@@ -2,8 +2,8 @@
 
 ### To run the app locally
 
-#### npm install
+- npm install
 
-#### npm run start
-#### or 
-#### node app.js
+- npm run start
+ or 
+ node app.js
