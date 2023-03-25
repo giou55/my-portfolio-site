@@ -64,6 +64,11 @@ img {
 	font-weight: 500;
 	margin-bottom: 2em;
 }
+.technologies {
+	margin-top: -1rem;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
 
 .subtitle {
 	text-transform: uppercase;
