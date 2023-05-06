@@ -290,34 +290,112 @@
 
 		<section class="portfolio" id="portfolio">
 
-			{{#each projects}}
 			<div class="portfolio-container transition3">
 				<div class="portfolio-text">
-					<p class="subtitle">{{this.category}}</p>
+					<p class="subtitle">Dating App</p>
 					<div>
-						<p class="title portfolio-title">{{this.name}}</p>
+						<p class="title portfolio-title">Matcher</p>
 					</div>
 					<p class="description portfolio-desc">
-						{{this.description}}<br />
+						Matcher is a dating website. It's a project with
+						many features like authentication,
+						authorization, searching persons,
+						liking persons, sending real-time messages
+						and admin dashboard.<br />
 					</p>
-					<p class="technologies portfolio-desc">
-						Technologies:<br> {{this.technologies}}
-					</p>
+					<p class="technologies portfolio-desc">Technologies:<br> Angular, .NET Core, Entity Framework, SignalR, Bootstrap, Postgres</p>
 					<p class="portfolio-links">
-						<button>
-							<a href="{{this.github_repo}}" target="_blank">Github Repo</a>
-						</button>
-						<button>
-							<a href="{{this.live_url}}" target="_blank">Live Site</a>
-						</button>
+						<button><a
+								href="https://github.com/giou55/dating-app-new"
+								target="_blank"
+							>Github Repo</a></button>
+						<button><a
+								href="https://matcher-datingapp.fly.dev"
+								target="_blank"
+							>Live Site</a></button>
 					</p>
 				</div>
+
 				<div class="portfolio-image">
-					<img src="{{this.image}}" alt="" />
+					<img
+						src="images/matcher.jpg"
+						alt="Real Homes real estate"
+					/>
 				</div>
 			</div>
-			{{/each}}
 
+			<div class="portfolio-container transition3">
+				<div class="portfolio-text">
+					<p class="subtitle">Real Estate App</p>
+					<div>
+						<p class="title portfolio-title">Real Homes</p>
+					</div>
+					<p class="description portfolio-desc">
+						Real Homes is a real estate website for finding
+						properties in Europe. All properties are advertised by
+						estate agents. You can search over properties of all
+						styles and prices. This is a full stack project with
+						many features like authentication, searching properties and
+						agents, admin dashboard, and adding favorites homes.
+					</p>
+					<p class="technologies portfolio-desc">
+						Technologies:<br> Angular, Strapi, Postgres, Material UI
+					</p>
+					<p class="portfolio-links">
+						<button><a
+								href="https://github.com/giou55/real-estate-website"
+								target="_blank"
+							>Github Repo (client)</a></button>
+						<button><a
+								href="https://github.com/giou55/strapi-real-estate"
+								target="_blank"
+							>Github Repo (server)</a></button>
+						<button><a
+								href="https://realhomes.giourmetakis.gr"
+								target="_blank"
+							>Live Site</a></button>
+					</p>
+				</div>
+
+				<div class="portfolio-image">
+					<img
+						src="images/realhomes.jpg"
+						alt="Real Homes real estate"
+					/>
+				</div>
+			</div>
+
+			<div class="portfolio-container transition3">
+				<div class="portfolio-text">
+					<p class="subtitle">Magazine website</p>
+					<div>
+						<p class="title portfolio-title">Flicher.gr</p>
+					</div>
+					<p class="description portfolio-desc">
+						Flicher is a greek culture magazine about media, movies,
+						music, theater, etc. There is a fully functional
+						administration area for posts, categories and users.
+						Every editor can create, edit or delete his own posts.
+					</p>
+					<p class="technologies portfolio-desc">
+						Technologies:<br> PHP, Laravel, Bootstrap, MySQL
+					</p>
+					<p class="portfolio-links">
+						<button><a
+								href="https://github.com/giou55/flicher-laravel"
+								target="_blank"
+							>Github Repo</a></button>
+						<button><a
+								href="https://www.flicher.giourmetakis.gr"
+								target="_blank"
+							>Live Site</a></button>
+					</p>
+				</div>
+
+				<div class="portfolio-image">
+					<img src="images/flicher.jpg" alt="Flicher magazine" />
+				</div>
+			</div>
 		</section>
 
 		<section class="about" id="about">
