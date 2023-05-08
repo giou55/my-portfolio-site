@@ -280,7 +280,7 @@
 						<div class="description skills-desc">
 							Building web applications and RESTful API servers using
 							<span class="bold-text">
-								ASP.NET Core, Laravel, MySQL, Postgres, MongoDB</span>.
+								ASP.NET Core, Laravel, MySQL, Postgres</span>.
 						</div>
 					</div>
 
@@ -304,9 +304,19 @@
 						Technologies:<br> {{this.technologies}}
 					</p>
 					<p class="portfolio-links">
+						{{#if this.github_repo}}
 						<button>
 							<a href="{{this.github_repo}}" target="_blank">Github Repo</a>
 						</button>
+						{{/if}}
+						{{#if this.github_repo_api}}
+						<button>
+							<a href="{{this.github_repo_client}}" target="_blank">Github Repo (client)</a>
+						</button>
+						<button>
+							<a href="{{this.github_repo_api}}" target="_blank">Github Repo (api)</a>
+						</button>
+						{{/if}}
 						<button>
 							<a href="{{this.live_url}}" target="_blank">Live Site</a>
 						</button>

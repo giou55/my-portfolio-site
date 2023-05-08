@@ -1,37 +1,38 @@
 [
   {
-    "name": "Connecting People",
-    "category": "Social App",
-    "description": "Matcher is a dating website. It's a project with many features like authentication, authorization, searching persons, liking persons, sending real-time messages and admin dashboard.",
-    "technologies": "Angular, .NET Core, Entity Framework, SignalR, Bootstrap, Postgres",
-    "github_repo": "https://github.com/giou55/dating-app-new",
-    "live_url": "https://matcher-datingapp.fly.dev",
-    "image": "images/matcher.jpg"
-  },
-  {
     "name": "Guitar Gallery",
     "category": "Eshop website",
     "description": "Matcher is a dating website. It's a project with many features like authentication, authorization, searching persons, liking persons, sending real-time messages and admin dashboard.",
-    "technologies": "Angular, .NET Core, Entity Framework, SignalR, Bootstrap, Postgres",
-    "github_repo": "https://github.com/giou55/dating-app-new",
-    "live_url": "https://matcher-datingapp.fly.dev",
-    "image": "images/matcher.jpg"
+    "technologies": "Angular, .NET Core, Entity Framework, Stripe, Redis, Postgres, Bootstrap",
+    "github_repo": "https://github.com/giou55/guitars-eshop-dotnet-angular",
+    "live_url": "https://guitars-eshop.fly.dev",
+    "image": "images/guitars.jpg"
   },
   {
     "name": "Matcher",
     "category": "Dating App",
     "description": "Matcher is a dating website. It's a project with many features like authentication, authorization, searching persons, liking persons, sending real-time messages and admin dashboard.",
-    "technologies": "Angular, .NET Core, Entity Framework, SignalR, Bootstrap, Postgres",
+    "technologies": "Angular, .NET Core, Entity Framework, SignalR, Postgres, Bootstrap",
     "github_repo": "https://github.com/giou55/dating-app-new",
     "live_url": "https://matcher-datingapp.fly.dev",
     "image": "images/matcher.jpg"
   },
   {
+    "name": "Connecting People",
+    "category": "Social App",
+    "description": "Matcher is a dating website. It's a project with many features like authentication, authorization, searching persons, liking persons, sending real-time messages and admin dashboard.",
+    "technologies": "React, .NET Core, Entity Framework, SignalR, Postgres, Bootstrap",
+    "github_repo": "https://github.com/giou55/activities-dotnet-react",
+    "live_url": "https://connectingpeople.fly.dev",
+    "image": "images/connecting_people.jpg"
+  },
+  {
     "name": "Real Homes",
     "category": "Real Estate Site",
     "description": "Real Homes is a real estate website for finding properties in Europe. All properties are advertised by estate agents. You can search over properties of all styles and prices.",
-    "technologies": "Angular, .NET Core, Entity Framework, SignalR, Bootstrap, Postgres",
-    "github_repo": "https://github.com/giou55/dating-app-new",
+    "technologies": "Angular, Strapi, Postgres, Material UI, Bootstrap",
+    "github_repo_client": "https://github.com/giou55/real-estate-angular",
+    "github_repo_api": "https://github.com/giou55/strapi-real-estate",
     "live_url": "https://matcher-datingapp.fly.dev",
     "image": "images/matcher.jpg"
   },
@@ -39,7 +40,7 @@
     "name": "Flicher",
     "category": "Magazine website",
     "description": "Flicher is a culture magazine about media, movies, music, theater, etc. There is a fully functional administration area for posts, categories and users. Every editor can create, edit or delete his own posts.",
-    "technologies": "PHP, Laravel, Bootstrap, MySQL",
+    "technologies": "PHP, Laravel, JavaScript, MySQL",
     "github_repo": "https://github.com/giou55/flicher-laravel",
     "live_url": "https://www.flicher.giourmetakis.gr",
     "image": "images/flicher.jpg"
