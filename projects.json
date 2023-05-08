@@ -2,7 +2,7 @@
   {
     "name": "Guitar Gallery",
     "category": "Eshop website",
-    "description": "Guitar Gallery is the ultimate destination for guitar lovers. In this Online Shop you can find the instrument that best suits your needs.",
+    "description": "Guitar Gallery is the ultimate destination for guitar lovers. In this online shop you can find the instrument that best suits your needs.",
     "technologies": "Angular, .NET Core, Entity Framework, Stripe, Redis, Postgres, Bootstrap",
     "github_repo": "https://github.com/giou55/guitars-eshop-dotnet-angular",
     "live_url": "https://guitars-eshop.fly.dev",
