@@ -2,7 +2,7 @@
   {
     "name": "Guitar Gallery",
     "category": "Eshop website",
-    "description": "Guitar Gallery is an eshop website for guitars lovers.",
+    "description": "Guitar Gallery is the ultimate destination for guitar lovers. In this Online Shop you can find the instrument that best suits your needs.",
     "technologies": "Angular, .NET Core, Entity Framework, Stripe, Redis, Postgres, Bootstrap",
     "github_repo": "https://github.com/giou55/guitars-eshop-dotnet-angular",
     "live_url": "https://guitars-eshop.fly.dev",
@@ -11,7 +11,7 @@
   {
     "name": "Matcher",
     "category": "Dating App",
-    "description": "Matcher is a dating website.",
+    "description": "Matcher is a dating app that makes it so simple to find your perfect match. Put some love in your life today!",
     "technologies": "Angular, .NET Core, Entity Framework, SignalR, Postgres, Bootstrap",
     "github_repo": "https://github.com/giou55/dating-app-new",
     "live_url": "https://matcher-datingapp.fly.dev",
@@ -20,7 +20,7 @@
   {
     "name": "Connecting People",
     "category": "Social App",
-    "description": "Connecting People is a social website.",
+    "description": "Connecting People is a social website that brings people together through activities that anyone can create.",
     "technologies": "React, .NET Core, Entity Framework, SignalR, Postgres, Bootstrap",
     "github_repo": "https://github.com/giou55/activities-dotnet-react",
     "live_url": "https://connectingpeople.fly.dev",
@@ -33,7 +33,7 @@
     "technologies": "Angular, Strapi, Postgres, Material UI, Bootstrap",
     "github_repo_client": "https://github.com/giou55/real-estate-angular",
     "github_repo_api": "https://github.com/giou55/strapi-real-estate",
-    "live_url": "https://matcher-datingapp.fly.dev",
+    "live_url": "https://realhomes.giourmetakis.gr",
     "image": "images/realhomes.jpg"
   },
   {
